@@ -102,7 +102,7 @@ public class ApiRequest<T> extends Request<T>{
             if (result == null) {
                 return null;
             }
-            Log.i("request url:" + getUrl() + " ;respone string:" + result.toString());
+            Log.i("Log","request url:" + getUrl() + " ;respone string:" + result.toString());
             return Response.success(result, parseCache(response));
         } catch (Throwable e) {
             e.printStackTrace();

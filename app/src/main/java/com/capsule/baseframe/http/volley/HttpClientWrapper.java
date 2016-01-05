@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.URI;
 
 /**
- * @author 宇宙神帝
+ * @author kakalee
  */
 public class HttpClientWrapper implements HttpClient {
 

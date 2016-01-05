@@ -17,7 +17,7 @@ import com.capsule.baseframe.http.volley.HttpClientWrapper;
 import java.io.File;
 
 /**
- * @author 宇宙神帝
+ * @author kakalee
  */
 public class VolleyUtils {
 
@@ -31,8 +31,6 @@ public class VolleyUtils {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
       stack = new HurlStack();
     } else {
-      // Prior to Gingerbread, HttpUrlConnection was unreliable.
-      // See: http://android-developers.blogspot.com/2011/09/androids-http-clients.html
       stack = new HttpClientStack(
           HttpClientWrapper.newInstance(AndroidHttpClient.newInstance(userAgent)));
     }

@@ -6,7 +6,7 @@ import android.os.Environment;
 import java.io.File;
 
 /**
- * @author liuxu34@wanda.cn (Liu Xu)
+ * @author kakalee
  */
 public class GlobalConfig {
 

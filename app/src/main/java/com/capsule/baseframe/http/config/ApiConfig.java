@@ -1,7 +1,7 @@
 package com.capsule.baseframe.http.config;
 
 /**
- * @author 宇宙神帝
+ * @author kakalee
  */
 public class ApiConfig {
 

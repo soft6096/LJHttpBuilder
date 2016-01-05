@@ -3,7 +3,7 @@ package com.capsule.baseframe.http.volley;
 import com.android.volley.DefaultRetryPolicy;
 
 /**
- * @author 宇宙神帝
+ * @author kakalee
  */
 public class ApiRetryPolicy extends DefaultRetryPolicy {
 

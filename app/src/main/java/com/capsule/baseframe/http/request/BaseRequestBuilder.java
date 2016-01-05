@@ -1,5 +1,7 @@
 package com.capsule.baseframe.http.request;
 
+import android.util.Log;
+
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -9,8 +11,7 @@ import com.capsule.baseframe.http.callback.DataFuture;
 import com.capsule.baseframe.http.volley.ApiContext;
 import com.capsule.baseframe.http.volley.ApiRequest;
 import com.capsule.baseframe.http.volley.Parser;
-import com.capsule.baseframe.log.Log;
-import com.capsule.baseframe.util.MainThreadPostUtils;
+import com.capsule.baseframe.http.volley.util.MainThreadPostUtils;
 
 /**
  * Created by kakalee on 15/7/30.
@@ -37,7 +38,7 @@ public abstract class BaseRequestBuilder<T> implements VolleyRequestBuilder<T> {
                 Log.d(TAG, "error status code is " + error.networkResponse.statusCode
                         + ", url is " + url + " , error message is " + error.getMessage());
             }
-            MainThreadPostUtils.toast(R.string.network_error);
+            MainThreadPostUtils.toast("亲，您的网络不给力，请稍后再试");
             if (dataCallback != null) {
                 MainThreadPostUtils.post(new Runnable() {
                     @Override

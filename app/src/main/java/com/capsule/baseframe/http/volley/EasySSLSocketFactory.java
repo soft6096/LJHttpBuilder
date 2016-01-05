@@ -17,7 +17,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 /**
- * @author 宇宙神帝
+ * @author kakalee
  */
 public class EasySSLSocketFactory extends SSLSocketFactory {
   SSLContext sslContext = SSLContext.getInstance("TLS");
